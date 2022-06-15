@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} {{ titulo }} {% endblock %}
+{% block content %}
+    <h1>Kelvin</h1><hr>
+    <form action="/kelvin/data/" method="POST">
+        Insira os graus kelvin<input type="text" name="kelvin"><br>
+        <input type="radio" id="celsius" name="temperatura" value="celsius">
+        <label for="celsius">Celsius</label><br>
+        <input type="radio" id="fahrenheit" name="temperatura" value="fahrenheit">
+        <label for="fahrenheit">Fahrenheit</label><br><br>
+        <input type="submit" value="Send">
+    </form>
+<br>
+{% endblock %}
+© 2022 GitHub, Inc.

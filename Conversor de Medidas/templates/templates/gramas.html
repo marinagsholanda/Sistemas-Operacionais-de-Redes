@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} {{ titulo }} {% endblock %}
+{% block content %}
+    <h1>Gramas</h1><hr>
+    <form action="/gramas/data/" method="POST">
+        Insira os gramas<input type="text" name="gramas"><br>
+        <input type="radio" id="quilogramas" name="massa" value="quilogramas">
+        <label for="quilogramas">Quilogramas</label><br>
+        <input type="radio" id="miligramas" name="massa" value="miligramas">
+        <label for="miligramas">Miligramas</label><br><br>
+        <input type="submit" value="Send">
+    </form>
+<br>
+{% endblock %}
