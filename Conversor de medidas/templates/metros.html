@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} {{ titulo }} {% endblock %}
+{% block content %}
+    <h1>Metros</h1><hr>
+    <form action="/metros/data/" method="POST">
+        Insira os metros<input type="text" name="metros"><br>
+        <input type="radio" id="quilometros" name="comprimento" value="quilometros">
+        <label for="quilometros">Quilômetros</label><br>
+        <input type="radio" id="centimetros" name="comprimento" value="centimetros">
+        <label for="centimetros">Centímetros</label><br><br>
+        <input type="submit" value="Send">
+    </form>
+<br>
+{% endblock %}
