@@ -8,10 +8,6 @@ app = Flask(__name__)
 def index():
     return redirect("/static/index.html")
 
-@app.route("/opcoes/")
-def opc():
-    return redirect("/static/opcoes.html")
-
 @app.route("/celsius/")
 def cel():
     return render_template('celsius.html', titulo='Conversor de Temperaturas')
