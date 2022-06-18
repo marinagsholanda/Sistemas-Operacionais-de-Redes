@@ -27,7 +27,8 @@ def form_cel():
             msg = "no data received"
     else:
         msg = "no data received"
-    return msg
+    return render_template('result.html', titulo='Resultado', msg=msg, voltar='/celsius/')
+
 
 
 @app.route("/fahrenheit/")
@@ -49,7 +50,7 @@ def form_fahr():
             msg = "no data received"
     else:
         msg = "no data received"
-    return msg
+    return render_template('result.html', titulo='Resultado', msg=msg, voltar='/fahrenheit/')
 
 
 @app.route("/kelvin/")
@@ -71,7 +72,7 @@ def form_kel():
             msg = "no data received"
     else:
         msg = "no data received"
-    return msg
+    return render_template('result.html', titulo='Resultado', msg=msg, voltar='/kelvin/')
 
 
 @app.route("/quilometros/")
@@ -93,7 +94,7 @@ def form_km():
             msg = "no data received"
     else:
         msg = "no data received"
-    return msg
+    return render_template('result.html', titulo='Resultado', msg=msg, voltar='/quilometros/')
 
 
 @app.route("/metros/")
@@ -115,7 +116,7 @@ def form_m():
             msg = "no data received"
     else:
         msg = "no data received"
-    return msg
+    return render_template('result.html', titulo='Resultado', msg=msg, voltar='/metros/')
 
 
 @app.route("/centimetros/")
@@ -137,7 +138,7 @@ def form_cm():
             msg = "no data received"
     else:
         msg = "no data received"
-    return msg
+    return render_template('result.html', titulo='Resultado', msg=msg, voltar='/centimetros/')
 
 
 @app.route("/quilogramas/")
@@ -159,7 +160,7 @@ def form_kg():
             msg = "no data received"
     else:
         msg = "no data received"
-    return msg
+    return render_template('result.html', titulo='Resultado', msg=msg, voltar='/quilogramas/')
 
 
 @app.route("/gramas/")
@@ -181,7 +182,7 @@ def form_g():
             msg = "no data received"
     else:
         msg = "no data received"
-    return msg
+    return render_template('result.html', titulo='Resultado', msg=msg, voltar='/gramas/')
 
 
 @app.route("/miligramas/")
@@ -203,4 +204,4 @@ def form_mg():
             msg = "no data received"
     else:
         msg = "no data received"
-    return msg
+    return render_template('result.html', titulo='Resultado', msg=msg, voltar='/miligramas/')
